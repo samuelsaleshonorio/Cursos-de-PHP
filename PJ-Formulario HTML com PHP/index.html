@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet">
+	<style type="text/css">
+	body { 
+		background-color: rgb(237,30,38); 
+		font-family: 'Iceland';
+		text-align: justify;
+		color:black;
+		font-family: 'Iceland', cursive;
+	}
+	
+</style>
+<
+<meta charset="utf-8">
+<title>Formulário HTML</title>
+</head>
+<body>
+	<a href ="https://pt.wikipedia.org/wiki/Adonai" target ="_blank"><p align="center"><img src="logo.png"></p></a>
+
+	<form name="cadastro" action="processar.php" method="post">
+		<input type="hidden" name="codigo" value="2019">
+		<p align="center">
+			Login:
+			<input type="text" name="user_name" autocomplete="off"></p>
+			<p align="center">
+				Senha:
+				<input type="password" name="password"></p>
+				<p align="center"> 
+					<input type="radio" name="tipo" value="Professor"> Professor 
+					<input type="radio" name="tipo" value="Aluno"> Aluno <br>
+					<input type="checkbox" name="senha"> Salvar senha <input type="checkbox" name="nessa_sessao"> Somente nessa sessão <br>
+					<input type="file" name="arquivo"><br></p>
+					<p align="center">
+						<select name="uf">
+							<option value="MG"> Minas Gerais </option>
+							<option value="SP"> São Paulo </option>
+						</select></p>
+						<p align="center">
+							Deixe aqui sua opinião sobre nosso site:<br>
+							<textarea name="texto_do_usuario" rows="4" cols="40"></textarea></p>
+							<p align="center">
+								<input type="submit" name="btn_enviar" value="Entrar"> --__--
+								<input type="reset" name="btn_cancelar" value="Cancelar"></p>
+							</form>
+						</body>
+						</html>
