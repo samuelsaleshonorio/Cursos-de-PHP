@@ -1,0 +1,35 @@
+
+*{
+	font-family: sans-serif;
+}
+
+h1,h2{
+	text-align:center;
+}
+td, th {
+	padding: .7em;
+	margin: 0;
+	text-align: center;
+}
+
+td{
+	font-weight:bold;
+}
+
+table{
+	border-collapse: collapse;
+	width: 50%;
+	margin-bottom : .2em;
+	table-layout: fixed;
+	text-align: center;
+	background-color: rgb(199,199,199);
+}
+
+.top{
+	font-weight: bold;
+	font-size: 20px;
+}
+.tituloresumo{
+	margin-left: 10px;
+	font-style:'Great Vibes',cursive;
+}

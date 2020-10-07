@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="logincss.css">
+	<meta charset="utf-8">
+	
+</head>
+<body>
+
+	<div class="login-box">
+		<h1>Login</h1>
+
+		<form action="valida.php" method="post" id="verifica">
+
+			<div class="textbox">
+				
+				<input type="text" id="usuario" name="usuario" placeholder="Usuário" outline="none"> 
+			</div>
+
+			<div class="textbox">
+				
+				<input type="password" id="senha" name="senha" placeholder="Senha"  outline="none"> <br>
+			</div>
+
+			<input class="btn" type="button" name="Enviar" value="Entrar" onclick="Login()">
+
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		function Login() {
+			var usuario = document.getElementById('usuario').value;
+			usuario=usuario.toLowerCase();
+			var senha= document.getElementById('senha').value;
+			if (usuario!=''&&senha!='') {
+				document.getElementById('verifica').submit();
+			}
+			if (usuario=='') {
+				alert ("Por favor, preencha o campo Usuário!");
+			}
+			if (senha=='') {
+				alert ("Por favor, preencha o campo Senha!");
+			}
+		}
+	</script>
+	
+
+</body>
+</html>

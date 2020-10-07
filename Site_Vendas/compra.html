@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Compras</title>
+	<link rel="stylesheet" type="text/css" href="compracss.css">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div>
+		<h1 style="margin-left: 10px;">LH  Guitars & Guitars</h1>
+		<div style="padding-left: 200px;">
+
+			<p style="text-align: center;">
+				<img src="imgs/bg.png">
+			</p>
+
+		</div>
+	</div>
+	<form action="resumo.php" method="post" id="testa">
+		<div id="tudo">
+			<table border='1'>
+
+				<tbody>
+					<tr>
+						<td><img src="imgs/img1.jpg"></td>
+						<td>
+							<h3>Violão elétrico Nylon Takamine tc 123sc LH</h3>
+							<h2>R$ 12.400,00</h2>
+							<p>					
+								Violão canhoto, 6 cordas, Nylon, tampo em Solid Cedar, corpo e escala em Rosewood, tarraxa dourada. 
+							</p>
+						</td>
+
+						<td>
+							
+							<div class="divQ">
+								<p>Informe a quantidade.</p>
+								<input type="number" name="produto1" id="produto1" size ="1" min="1">
+							</div>
+							
+						</td>
+
+					</tr>
+
+					<tr>
+						<td><img src="imgs/img2.jpg"></td>
+						<td>
+							<h3>Violão elétrico acústico Yamaha APX700II de linha fina - Natural LH</h3>
+							<h2>R$ 2.900,00</h2>
+							<p>
+								Violão canhoto, corpo em mogno, acabamento natural e em Hi-Gloss, braço em Rosewood.
+							</p>
+						</td>
+						<td>
+							
+							<div class="divQ">
+								<p>Informe a quantidade.</p>
+								<input type="number" name="produto2" id="produto2" size ="1" min="1">
+							</div>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td><img src="imgs/img3.jpg"></td>
+						<td>
+							<h3>Violão Strinberg Folk Aço Af-65lh Bk Preto Canhoto</h3>
+							<h2>R$ 780,00</h2>
+							<p>
+								Violão canhoto, tampo em Spruce, corpo em Nato, escala em Rosewood, tarraxa preta.
+							</p>
+						</td>
+						<td>
+							
+							<div class="divQ">
+							<p>Informe a quantidade.</p>
+								<input type="number" name="produto3" id="produto3" size ="1" min="1">
+							</div>
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td><img src="imgs/img4.jpg"></td>
+						<td>
+							<h3>Guitarra Fender - Player Telecaster LH MN - Black</h3>
+							<h2>R$ 6.600,00</h2>
+							<p>
+								Guitarra elétrica Fender Player Telecaster MN, Escala em Maple, Preta (506). Série Mex Player Series.
+								<br>
+								Corpo em Alder, acabamento em Gloss Polyester, braço em Maple, escala em Maple, tensor Standard.
+								<br><br>
+								Captador da Ponte: Player Series Alnico 5 Tele® Single-Coil
+								<br>
+								Captador do Braço: Player Series Alnico 5 Tele® Single-Coil 
+								<br>
+								Controles: Master Volume, Master Tone
+								<br>
+								Chave Seletora: 3 Posições
+							</p>
+						</td>
+						<td>
+							
+							<div class="divQ">
+							<p>Informe a quantidade.</p>
+								<input type="number" name="produto4" id="produto4" size ="1" min="1">
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td><img src="imgs/img5.jpg"></td>
+						<td>
+							<h3>Guitarra Vintage LV 100 AFD Paradise LH Canhot</h3>
+							<h2>R$ 2.500,00</h2>
+							<p>
+								Guitarra elétrica 6 cordas Vintage LV100 Paradise (canhoto), corpo em mogno, top maple flamed 
+								amber braço em mogno (colado), escala em rosewood, 22 trastes, marcação Pearloid Crown, 
+								captadores Wilkinson®, tarraxas Wilkinson® Deluxe WJ44.
+							</p>
+						</td>
+						<td>
+							
+							<div class="divQ">
+							<p>Informe a quantidade.</p>
+								<input type="number" name="produto5" id="produto5" size ="1" min="1">
+							</div>
+							
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<p style="font-size: 18px; text-align: center;"><input type="radio" name="opc" id="opc" value="normal" checked>Encomenda normal → R$ 20,00</p>
+			<p style="font-size: 18px; text-align: center;"><input type="radio" name="opc" id="opc" value="expressa" >Encomenda expressa → R$ 50,00</p> 
+			<p style="text-align: center;"><input class="btn" type="button" name="Continuar" value="Continuar" onclick="testa()"></p>
+			
+			<script type="text/javascript">
+				function testa() {
+					var p1 = document.getElementById(`produto1`).value;
+					var p2 = document.getElementById(`produto2`).value;
+					var p3 = document.getElementById(`produto3`).value;
+					var p4 = document.getElementById(`produto4`).value;
+					var p5 = document.getElementById(`produto5`).value;
+					
+					if (p1<0 || p2<0  || p3<0 || p4<0  || p5<0) {
+						alert("Favor somente numeros positivos");
+						window.location.relowd();
+					}
+
+					if (p1=="" && p2=="" && p3=="" && p4=="" && p5=="") {
+						alert("Favor informar a quantidade dos produtos");
+					}
+					else {
+						document.getElementById('testa').submit();
+					}
+				}	
+
+			</script>
+			
+		</div>
+	</form>
+
+</body>
+</html>

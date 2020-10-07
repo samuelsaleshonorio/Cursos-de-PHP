@@ -1,0 +1,33 @@
+		body{
+			background-color: rgb(179,179,179);
+		}
+		h1{
+			font-size: 40px;
+			font-family: 'Great Vibes', cursive;
+		}
+
+		*{
+			font-family: sans-serif;
+		}
+
+		h2,h3,p{
+			padding-left: 7px;
+		}
+
+
+		#tudo{
+			
+			padding-left: 15%;
+			padding-right: 15%;
+		}
+
+		.divQ{
+			position: center;
+			padding-left: 23px;	
+		}
+
+		
+		table{
+			border-collapse: collapse;
+			background-color: white;
+		}
