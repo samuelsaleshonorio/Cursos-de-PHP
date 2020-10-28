@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Tabela</title>
+
+	<style type="text/css">
+	table{
+		text-align: center;
+		margin: 0 auto;
+	}
+	tr:nth-child(even){
+		background-color: rgb(0,125,255);
+	}
+</style>
 <body>
 	<h3 style="text-align: center;">Relatório</h3>
 	<?php 
